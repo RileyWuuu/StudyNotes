@@ -17,5 +17,6 @@
 * Needs to be done through pointer (so that it all points directly to the same struct, avoids call by value situation)
 * waits for a collection of goroutines to finish.
 * main goroutine calls Add to set the number of goroutines to wait for. Then each of the goroutines runs and calls Done when finished.
-![Sync waitgroup](https://user-images.githubusercontent.com/71340325/177270901-d1b36c50-7313-472f-8fac-ec10f5fc0c34.jpg)
+![Sync waitgroup](https://user-images.githubusercontent.com/71340325/177271353-d6dc38ad-b639-41a3-99bf-cc995e534730.jpg)
+
 * WaitGroup is mainly used to wait for a group of goroutines to exit. We can specify the number of goroutines we need to wait for to exit by adding, and then decrease by Done. If it is 0, we can exit
