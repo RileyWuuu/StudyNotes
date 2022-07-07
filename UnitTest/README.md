@@ -1,5 +1,10 @@
 # UnitTest
 
+## Types
+* testing (currently using)
+* Testify
+* Ginkgo
+
 ## Name of file
 * Ending a file's name with _test.go tells the go test command that this file contains test functions.
 
