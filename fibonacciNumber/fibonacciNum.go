@@ -6,9 +6,9 @@ func main() {
 	x := fibonacciNum(3)
 	fmt.Println(x)
 }
-func fibonacciNum(n int) int {
+func FibonacciNum(n int) int {
 	if n == 0 || n == 1 {
 		return n
 	}
-	return fibonacciNum(n-1) + (n - 2)
+	return FibonacciNum(n-1) + FibonacciNum(n-2)
 }
