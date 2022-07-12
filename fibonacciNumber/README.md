@@ -16,6 +16,6 @@ func fibonacciNum(n int)int{
   if n==0 || n == 1{
     return n
   }
-  return fibonacciNum(n-1)+(n2)
+  return fibonacciNum(n-1)+(n-2)
 }
 ```
