@@ -12,10 +12,10 @@ Given n, calculate F(n).
 ## Solution:
 ### Solved by using recursion:
 ```
-func fibonacciNum(n int)int{
-  if n==0 || n == 1{
-    return n
-  }
-  return fibonacciNum(n-1)+(n-2)
+func FibonacciNum(n int) int {
+	if n == 0 || n == 1 {
+		return n
+	}
+	return FibonacciNum(n-1) + FibonacciNum(n-2)
 }
 ```
