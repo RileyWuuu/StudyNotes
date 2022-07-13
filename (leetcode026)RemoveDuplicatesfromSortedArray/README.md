@@ -55,3 +55,17 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 1. Append two slices
 2. Use if statement to tell whether the value is present in the map or not
 3. If not, append the value to new slice and return
+
+```
+func RemoveDuplicate(slice []string) []string {
+	inResult := make(map[string]bool)
+	var result []string
+	for _, str := range slice {
+		if _, ok := inResult[str]; !ok {
+			inResult[str] = true
+			result = append(result, str)
+		}
+	}
+	return result
+}
+```
