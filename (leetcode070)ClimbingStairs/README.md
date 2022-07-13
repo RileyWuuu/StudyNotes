@@ -1,4 +1,4 @@
-# Climbing Stairs（Leetcode070)
+# Climbing Stairs（leetcode070)
 
 ## Description:
 You are climbing a staircase. It takes n steps to reach the top.
