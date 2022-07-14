@@ -30,7 +30,8 @@ Output: 4
 
 ## Solution:
 
-### 1.Using a simple for loop, if neither of them match target then return the length of slice
+### 1.Use a simple for loop, if neither of them match target then return the length of slice
+(Runtime: 10 ms)
 ```
 func SearchInsert(nums []int, target int) int {
 	for i := 0; i < len(nums); i++ {
@@ -41,3 +42,13 @@ func SearchInsert(nums []int, target int) int {
 	return len(nums)
 ```
 }
+### 2.Use sort.Search to find the target number, sort returns the index of the value
+(Runtime: 2 ms)
+```
+func searchInsert(nums []int, target int) int {
+    i := sort.Search(len(nums), func(i int) bool {
+        return nums[i] >= target
+    })
+    return i
+}
+```
