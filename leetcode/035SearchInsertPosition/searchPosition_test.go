@@ -37,5 +37,6 @@ func TestSearch(t *testing.T) {
 	}
 	for _, n := range data {
 		ast.Equal(n.o.out, SearchInsert(n.i.in, n.i.target))
+		ast.Equal(n.o.out, SortSearch(n.i.in, n.i.target))
 	}
 }
