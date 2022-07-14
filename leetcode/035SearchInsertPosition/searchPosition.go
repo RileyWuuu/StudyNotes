@@ -13,7 +13,6 @@ func main() {
 func SearchInsert(nums []int, target int) int {
 	for i := 0; i < len(nums); i++ {
 		if nums[i] >= target {
-			fmt.Println("i=", i)
 			return i
 		}
 	}
