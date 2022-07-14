@@ -1,13 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"sort"
+)
 
 func main() {
 	inputInt := make([]int, 1)
 	inputInt = append(inputInt, 1, 2, 3, 4, 5, 6, 7)
 
-	result := SearchInsert(inputInt, 4)
-	fmt.Println("result=", result)
+	SearchInsert(inputInt, 4)
+	SortSearch(inputInt,4)
 
 }
 func SearchInsert(nums []int, target int) int {
@@ -18,3 +20,10 @@ func SearchInsert(nums []int, target int) int {
 	}
 	return len(nums)
 }
+func SortSearch(nums []int,target int)int{
+	i:=nums.sort.Search(len(nums)func(i int)bool{
+		return nums[i] >= target
+	})
+	return i
+}
+
