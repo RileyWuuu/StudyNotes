@@ -27,7 +27,7 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 **Constraints:**
 * -231 <= x <= 231 - 1
-* 
+
 ## Solution:
 
 ### 1. Reverse the input number (using for loop) and compare
