@@ -37,7 +37,7 @@ Output: [3,4,6,16,17]
 ## Solutions:
 
 ### 1. Use for loop to add up the value in slice(changing the value at the same time)
-
+Runtime: 2 ms
 ```
 func RunningSum(nums []int) []int {
 
