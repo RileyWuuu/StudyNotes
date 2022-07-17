@@ -35,7 +35,7 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13"
 <hr/>
 
 ## Solutions:
-
+(Runtime:4ms)
 ```
 func fizzBuzz(n int) []string {
 	var result []string
