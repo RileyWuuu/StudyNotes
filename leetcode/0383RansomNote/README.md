@@ -29,3 +29,20 @@ Output: true
 
 - 1 <= ransomNote.length, magazine.length <= 105
 - ransomNote and magazine consist of lowercase English letters.
+
+<hr/>
+
+## Solutions:
+### 1. Use strings.Count to see whether magazine contains the(enough) letters to spell the word in ransomNote
+(Runtime:4ms)
+```
+func canConstruct(ransomNote string, magazine string) bool{
+  for _,v := range ransomNote{
+    if strings.Count(ransomNote,string(v)) > strings.Count(magazine,string(v)){
+      return false
+     }
+   }
+   return true
+ }
+}
+```
