@@ -7,7 +7,7 @@
 
 
 ## Goroutine
-* Goroutines are unctions or methods that run concurrently with other functions or methods.
+* Goroutines are actions or methods that run concurrently with other functions or methods.
 * We use channel for goroutines' communication in order to synchronize execution and pass values.
 * Concurrency :
     * the capability to deal with lots of things at once. (But not at the same time)
