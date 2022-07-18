@@ -27,6 +27,7 @@ Output: 2
 ## Solutions:
 
 1. Use a for loop to count the number of consecutive 1s, if meet zero then add the counts into a slice. Afterwards compare each count and return the max number.
+(Runtime: 48 ms)
 
 ```
 func findMaxConsecutiveOnes(nums []int) int {
@@ -56,7 +57,7 @@ func findMaxConsecutiveOnes(nums []int) int {
 ```
 
 2. Use a for range to and count the 1s by curr\*n+n. Afterwards decide whether it's the max number and return
-
+(Runtime: 37 ms)
 ```
 func FindMaxForRange(nums []int) int {
 	res, curr := 0, 0
