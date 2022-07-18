@@ -32,5 +32,6 @@ func TestFindNum(t *testing.T) {
 
 	for _, x := range data {
 		ast.Equal(x.o.out, FindNumbers(x.i.in))
+		ast.Equal(x.o.out, FindNumbersSimple(x.i.in))
 	}
 }
