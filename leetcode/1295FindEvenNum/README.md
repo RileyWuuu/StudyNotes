@@ -35,7 +35,7 @@ Only 1771 contains an even number of digits.
 ## Solutions:
 
 ### 1. Count every digit of value in slice and append to a new one. Check the slice to see how many values are even (%2==0)
-
+(Runtime: 4 ms)
 ```
 func findNumbers(nums []int) int {
     var evenCount int
