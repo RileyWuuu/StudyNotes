@@ -56,3 +56,22 @@ func findNumbers(nums []int) int {
     return evenCount
 }
 ```
+
+### 2. With the same concept of solution 1 but more simple
+```
+func findNumbers(nums[]int)int{
+    var result int
+    for x := range nums{
+        i :=0
+        for nums[x]>0{
+            i++
+            nums[x] = nums[x]/10
+        }
+        if i %2==0{
+            result++
+        }
+     }
+     return result
+}
+```
+            
