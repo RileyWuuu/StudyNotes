@@ -56,7 +56,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 ## Solutions:
 
 ### 1. If nums[i]!=val, put into slice.
-
+(Runtime: 3ms)
 ```
 func removeElement(nums []int,val int)int{
     i:=
