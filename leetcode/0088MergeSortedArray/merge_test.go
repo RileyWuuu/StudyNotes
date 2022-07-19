@@ -53,7 +53,7 @@ func TestMerge(t *testing.T) {
 		},
 	}
 	for _, x := range data {
-		merge(x.i.nums1, x.i.x, x.i.nums2, x.i.y)
+		mergeII(x.i.nums1, x.i.x, x.i.nums2, x.i.y)
 		ast.Equal(x.o.out, x.i.nums1)
 	}
 }
