@@ -48,6 +48,8 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 
 ### 1. use append to cut the slice into the correct length (m,n). Append nums2 value into nums1. Sort them in decreacing order by using sort.Slice.
 
+(Runtime: 5 ms)
+
 ```
 func merge(nums1 []int, m int, nums2 []int, n int) {
 	nums1 = append(nums1[:m])
@@ -58,5 +60,15 @@ func merge(nums1 []int, m int, nums2 []int, n int) {
 	sort.Slice(nums1, func(i, j int) bool {
 		return nums1[i] < nums1[j]
 	})
+}
+```
+### 2. Same concept but shorter and faster. Append the altered arrays into nums1, sort them in decreasing order by using sort.Ints
+
+(Runtime: 2 ms)
+
+```
+func merge(nums1 []int, m int, nums2 []int, n int) {
+	nums1 = append(nums1[:m],nums2[:m])
+	sort.Ints(nums1)
 }
 ```
