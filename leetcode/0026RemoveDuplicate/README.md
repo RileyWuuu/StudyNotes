@@ -55,6 +55,8 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 ## Solutions:
 
 ### 1. set x=0;i=1, use a for loop to compare each value and replace the value in slice.
+(Runtime: 15ms)
+![0](https://user-images.githubusercontent.com/71340325/180031457-e39555fc-e76e-46a7-bf7c-7400ed009c81.jpg)
 
 ```
 func removeDuplicates(nums []int)int{
