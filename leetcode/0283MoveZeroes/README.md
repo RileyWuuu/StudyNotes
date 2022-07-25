@@ -26,3 +26,14 @@ Output: [0]
 
 ### 1.Use two pointers and exchange each number when the value != 0
 (Runtime: 21ms)
+```
+func moveZeroes(arr []int){
+    x :=0
+    for i:=0;i<len(arr);i++{
+        if nums[i]!=0{
+            nums[i],nums[x] = nums[x],nums[i]
+            x++
+        }
+    }
+}
+```
