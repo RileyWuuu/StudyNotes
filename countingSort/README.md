@@ -1,6 +1,8 @@
 # Counting sort
 
+![1](https://user-images.githubusercontent.com/71340325/180841747-caa6ec51-b963-42cf-8345-9678f4d1afd8.jpg)
 
+![2](https://user-images.githubusercontent.com/71340325/180841751-2d010446-614e-4a21-bbb8-50eb88d5cc44.jpg)
 
 
 
