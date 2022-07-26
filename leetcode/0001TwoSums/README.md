@@ -38,7 +38,7 @@ Output: [0,1]
 ## Solutions:
 
 ### 1. Calculate and find whether the value of (target - x) exists in the input slice and replace the x(value) to i(key) and return
-
+Time Complexity:O(n)
 ```
 func TwoSums(nums []int, target int) []int {
 	intMap := make(map[int]int)
@@ -51,4 +51,22 @@ func TwoSums(nums []int, target int) []int {
 	return []int{}
 
 }
+```
+### 2. Solve in a straight forward (but inefficent) way with two for loop
+Time Complexity:O(n^2)
+
+```
+func twoSums(nums []int)[]int{
+	result := make([]int,2)
+	for i:=0;i<len(nums);i++{
+		for x:=i+1;x<len(nums);x++{
+			if nums[i]+nums[x]==target{
+				result[0]=i
+				result[1]=x
+			}
+		}
+	}
+	return result
+}
+```
 ```
