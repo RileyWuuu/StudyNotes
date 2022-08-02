@@ -30,6 +30,7 @@ func TestSortSlice(t *testing.T) {
 		},
 	}
 	for _, x := range data {
-		ast.Equal(x.o.out, SortedSquare(x.i.in))
+		// ast.Equal(x.o.out, sortedSquare(x.i.in))
+		ast.Equal(x.o.out, sortedSquareII(x.i.in))
 	}
 }
