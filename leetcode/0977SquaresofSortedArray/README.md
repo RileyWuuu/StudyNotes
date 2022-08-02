@@ -43,3 +43,24 @@ func sortedSquares(nums []int)[]int{
     return nums
 }
 ```
+### 2. Use two pointer(head & tail) to sort the order of array
+
+```
+func sortedSquares(nums []int)[]int{
+    head:=0
+    tail:=len(nums)-1
+    result := make([]int,len(nums))
+    current:=len(nums)-1
+    for current>=0{
+        if math.Abs(float(nums[head]))>=math.Abs(float(nums[tail])){
+            result[current]=int(math.Pow(float(nums[head]),2))
+            heat++
+        }else{
+            result[current]=int(math.Pow(float(nums[tail]),2))
+            tail--
+        }
+        current--
+    }
+    return result
+}
+```
