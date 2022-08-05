@@ -20,3 +20,18 @@
 ![Sync waitgroup](https://user-images.githubusercontent.com/71340325/177271353-d6dc38ad-b639-41a3-99bf-cc995e534730.jpg)
 
 * WaitGroup is mainly used to wait for a group of goroutines to exit. We can specify the number of goroutines we need to wait for to exit by adding, and then decrease by Done. If it is 0, we can exit
+
+## Mutex
+![image](https://user-images.githubusercontent.com/71340325/183039270-224caeb0-120a-4c08-b4ab-375fa03bdba4.png)
+Illustration created for “A Journey With Go”, made from the original Go Gopher, created by Renee French.
+
+* A method used as a lock to ensure that only one Goroutine is accessing the critical section of code at any point of time.
+   * Two methods:
+      * Lock
+      * Unlock
+   * Code between a call to lock and unlock will be executed by only one Goroutine.
+   ```
+   mutex.Lock()
+   x += 1
+   mutex.Unlock()
+   ```
