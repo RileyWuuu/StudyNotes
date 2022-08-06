@@ -99,17 +99,17 @@ type bank struct{
 }
 func main(){
    var wg sync.WaitGroup
-      b :=&bank{}
-      n:=1000
-      wg.Add(n)
-      for i:=0;i<n;i++{
-         go func(){
-            b.Deposit(1000)
-            wg.Done()
-         }()
-      }
-      wg.wait
-      fmt.Println(b.balance)
+   b :=&bank{}
+   n:=1000
+   wg.Add(n)
+   for i:=0;i<n;i++{
+      go func(){
+         b.Deposit(1000)
+         wg.Done()
+      }()
+   }
+   wg.wait
+   fmt.Println(b.balance)
 }
 func (b *bank)deposit int{
    b.mux.Lock()
