@@ -12,6 +12,38 @@
 * Concurrency :
     * the capability to deal with lots of things at once. (But not at the same time)
     * ![Goroutine](https://user-images.githubusercontent.com/71340325/177244854-119aa66f-fc93-4997-88a1-6dadeecdc6d4.jpg)
+* Examples:
+```
+package main
+import(
+   "fmt"
+   "sync"
+)
+type bank struct{
+   balance int
+}
+func main(){
+   var wg sync.WaitGroup
+   wg.Add(3)
+   go func(){
+      deposit(1000)
+      wg.Done()
+   }()
+      go func(){
+      deposit(1050)
+      wg.Done()
+   }()
+      go func(){
+      deposit(2000)
+      wg.Done()
+   }()
+   wg.Wait()
+   fmt.Println(b.balance)
+}
+func (b *bank) deposit(amount int){
+   b.balance += amount
+}
+```
  
 ## WaitGroup
 * Needs to be done through pointer (so that it all points directly to the same struct, avoids call by value situation)
