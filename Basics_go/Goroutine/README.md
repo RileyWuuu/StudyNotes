@@ -95,7 +95,7 @@ func (b *bank) deposit(amount int){
 ```
 type bank struct{
    balance int
-   mux sync.Mutex
+   mux sync.RWMutex
 }
 func main(){
    var wg sync.WaitGroup
@@ -105,6 +105,14 @@ func main(){
    for i:=0;i<n;i++{
       go func(){
          b.Deposit(1000)
+         log.Printf("(Write) Deposit amount: %v",1000)
+         wg.Done()
+      }()
+   }
+   wg.Add(n)
+   for i:=0;i<n;i++{
+      go func(){
+         log.Printf("(Read) Balance: %v",b.balance())
          wg.Done()
       }()
    }
@@ -112,8 +120,17 @@ func main(){
    fmt.Println(b.balance)
 }
 func (b *bank)deposit int{
-   b.mux.Lock()
+   b.mux.RWLock()
+   time.Sleep(time.Second)
    b.balance += amount
-   b.mux.Unlock()
+   b.mux.RWUnlock()
+}
+func (b *bank)balance()(balance int){
+   b.mux.RWLock()
+   time.Sleep(time.Second)
+   balance = b.balance
+   b.mux.RWUnlock()
+   return
 }
 ```
+> In the code above, we use sync.RWMutex, meaning a lock that allows multiple readers but only one writer, so that reading and writing will be processed simultaneously.
