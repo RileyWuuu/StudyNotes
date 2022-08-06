@@ -89,7 +89,7 @@ func (b *bank) deposit(amount int){
    }
    ```
    
-   > However, the result turns out to be 946000 (which we're expecting 1000*1000) <br>
+   > However, the result turns out to be 995000 (which we're expecting 1000*1000) <br>
    > This is called "race conditions", a situation that occurs when a device attempts to perform more than one operations at the same time.
 * When situations like this happens, we use mutex to constraint the device to run one goroutine at a time.
 ```
