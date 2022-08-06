@@ -88,6 +88,6 @@ func (b *bank) deposit(amount int){
       fmt.Println(b.balance)
    }
    ```
-   > However, the result turns out to be 946000 (which we're expecting 1000*1000)
+   > However, the result turns out to be 946000 (which we're expecting 1000*1000) </b>
    > This is called "race conditions", a situation that occurs when a device attempts to perform more than one operations at the same time.
 
