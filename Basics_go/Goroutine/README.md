@@ -100,7 +100,6 @@ type bank struct{
 func main(){
    var wg sync.WaitGroup
       b :=&bank{}
-      
       n:=1000
       wg.Add(n)
       for i:=0;i<n;i++{
@@ -109,6 +108,7 @@ func main(){
             wg.Done()
          }()
       }
+      wg.wait
       fmt.Println(b.balance)
 }
 func (b *bank)deposit int{
