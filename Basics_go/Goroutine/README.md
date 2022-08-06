@@ -24,6 +24,7 @@ type bank struct{
 }
 func main(){
    var wg sync.WaitGroup
+   b:=&bank{}
    wg.Add(3)
    go func(){
       deposit(1000)
@@ -68,7 +69,23 @@ func (b *bank) deposit(amount int){
    mutex.Unlock()
    ```
  * Examples:
-   * A bank where we can deposit and check our balance
-      * We can't provide services to clients one by one
-         * 
+   * We have a bank where we can deposit and check our balance. But we can't provide services to clients one by one
+   ```
+   //so the solutions might be: (following the code above)
+   //suppose we have 1000 actions(each action deposits 1000 into account) a time
+   func main(){
+      var wg sync.WaitGroup
+      b :=&bank{}
+      
+      n:=1000
+      wg.Add(n)
+      for i:=0;i<n;i++{
+         go func(){
+            b.Deposit(1000)
+            wg.Done()
+         }()
+      }
+      fmt.Println(b.balance)
+   }
+   ```
  
