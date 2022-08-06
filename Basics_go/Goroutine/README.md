@@ -71,7 +71,7 @@ func (b *bank) deposit(amount int){
  * Examples:
    * We have a bank where we can deposit and check our balance. But we can't provide services to clients one by one
    ```
-   //so the solutions might be: (following the code above)
+   //the solutions might be: (following the code above)
    //suppose we have 1000 actions(each action deposits 1000 into account) a time
    func main(){
       var wg sync.WaitGroup
@@ -88,6 +88,32 @@ func (b *bank) deposit(amount int){
       fmt.Println(b.balance)
    }
    ```
-   > However, the result turns out to be 946000 (which we're expecting 1000*1000) </b>
+   
+   > However, the result turns out to be 946000 (which we're expecting 1000*1000) <br>
    > This is called "race conditions", a situation that occurs when a device attempts to perform more than one operations at the same time.
-
+* When situations like this happens, we use mutex to constraint the device to run one goroutine at a time.
+```
+type bank struct{
+   balance int
+   mux sync.Mutex
+}
+func main(){
+   var wg sync.WaitGroup
+      b :=&bank{}
+      
+      n:=1000
+      wg.Add(n)
+      for i:=0;i<n;i++{
+         go func(){
+            b.Deposit(1000)
+            wg.Done()
+         }()
+      }
+      fmt.Println(b.balance)
+}
+func (b *bank)deposit int{
+   b.mux.Lock()
+   b.balance += amount
+   b.mux.Unlock()
+}
+```
