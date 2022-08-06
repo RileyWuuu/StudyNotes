@@ -117,7 +117,6 @@ func main(){
       }()
    }
    wg.wait
-   fmt.Println(b.balance)
 }
 func (b *bank)deposit int{
    b.mux.RWLock()
