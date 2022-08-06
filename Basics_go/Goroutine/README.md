@@ -1,6 +1,6 @@
 # Gouroutine Study Note
 
-## Channel
+## Channel 
 ![Goroutine1](https://user-images.githubusercontent.com/71340325/177242997-128fdc54-7eae-46f5-806d-06ef87dab0a2.jpg)
 
 *  a means through which different goroutines communicate.
