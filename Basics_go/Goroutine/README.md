@@ -23,7 +23,7 @@
 
 ## Mutex
 ![image](https://user-images.githubusercontent.com/71340325/183039270-224caeb0-120a-4c08-b4ab-375fa03bdba4.png)
-Illustration created for “A Journey With Go”, made from the original Go Gopher, created by Renee French.
+> Illustration created for “A Journey With Go”, made from the original Go Gopher, created by Renee French.
 
 * A method used as a lock to ensure that only one Goroutine is accessing the critical section of code at any point of time.
    * Two methods:
@@ -35,3 +35,8 @@ Illustration created for “A Journey With Go”, made from the original Go Goph
    x += 1
    mutex.Unlock()
    ```
+ * Examples:
+   * A bank where we can deposit and check our balance
+      * We can't provide services to clients one by one
+         * 
+ 
