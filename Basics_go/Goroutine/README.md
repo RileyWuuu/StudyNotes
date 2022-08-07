@@ -1,7 +1,7 @@
 # Gouroutine Study Note
 
 ## Channel 
-![Goroutine1](https://user-images.githubusercontent.com/71340325/177242997-128fdc54-7eae-46f5-806d-06ef87dab0a2.jpg)
+![Channel](https://user-images.githubusercontent.com/71340325/183274342-f7c82641-6e28-4927-9142-36f6c55fe2ac.jpg)
 
 *  a means through which different goroutines communicate.
 
@@ -11,7 +11,8 @@
 * We use channel for goroutines' communication in order to synchronize execution and pass values.
 * Concurrency :
     * the capability to deal with lots of things at once. (But not at the same time)
-    * ![Goroutine](https://user-images.githubusercontent.com/71340325/177244854-119aa66f-fc93-4997-88a1-6dadeecdc6d4.jpg)
+    * ![Goroutine](https://user-images.githubusercontent.com/71340325/183274211-2d283d1e-5f24-4734-8328-9f9756d5803f.jpg)
+
 * Examples:
 ```
 package main
@@ -50,7 +51,9 @@ func (b *bank) deposit(amount int){
 * Needs to be done through pointer (so that it all points directly to the same struct, avoids call by value situation)
 * waits for a collection of goroutines to finish.
 * main goroutine calls Add to set the number of goroutines to wait for. Then each of the goroutines runs and calls Done when finished.
-![Sync waitgroup](https://user-images.githubusercontent.com/71340325/177271353-d6dc38ad-b639-41a3-99bf-cc995e534730.jpg)
+![WaitGroup](https://user-images.githubusercontent.com/71340325/183274069-897977a7-71b5-40d7-9f37-f2c740204b27.jpg)
+
+
 
 * WaitGroup is mainly used to wait for a group of goroutines to exit. We can specify the number of goroutines we need to wait for to exit by adding, and then decrease by Done. If it is 0, we can exit
 
