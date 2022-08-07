@@ -150,3 +150,4 @@ func (b *bank)balance()(balance int){
 
 ### Differences between atomic and mutex
 * same in **behavior** but different in **performance**
+![atomicVSmutex](https://user-images.githubusercontent.com/71340325/183278841-07b6d5ba-5fc6-436c-8b29-cb36abee5220.jpg)
