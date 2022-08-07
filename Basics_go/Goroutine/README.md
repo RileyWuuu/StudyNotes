@@ -151,3 +151,9 @@ func (b *bank)balance()(balance int){
 ### Differences between atomic and mutex
 * same in **behavior** but different in **performance**
 ![mutexVSatomic](https://user-images.githubusercontent.com/71340325/183278863-4cab83e9-504c-4856-a799-5616b4ad6aa7.jpg)
+
+
+## RaceConditions
+* Occurs when multiple threads try to access and modify the same data (memory address)
+   * E.g. As the image shown below, if one threads trys to increase and int and another thread tries to do the same thing, it will cause race condition.
+   ![raceCondition](https://user-images.githubusercontent.com/71340325/183282417-e80d041b-2182-4d93-8ab9-35f91e593439.jpg)
