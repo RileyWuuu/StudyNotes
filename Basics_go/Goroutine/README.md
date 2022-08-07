@@ -150,3 +150,8 @@ func (b *bank)balance()(balance int){
    *  Load
    *  Store
    *  Swap
+
+### Differences between atomic and mutex
+![image](https://user-images.githubusercontent.com/71340325/183277759-793be12f-a0f0-490f-9d16-653825aa421a.png)
+> Illustration created for “A Journey With Go”, made from the original Go Gopher, created by Renee French.
+* same in **behavior** but different in **performance**
