@@ -58,9 +58,6 @@ func (b *bank) deposit(amount int){
 * WaitGroup is mainly used to wait for a group of goroutines to exit. We can specify the number of goroutines we need to wait for to exit by adding, and then decrease by Done. If it is 0, we can exit
 
 ## Mutex
-![image](https://user-images.githubusercontent.com/71340325/183039270-224caeb0-120a-4c08-b4ab-375fa03bdba4.png)
-> Illustration created for “A Journey With Go”, made from the original Go Gopher, created by Renee French.
-
 ![mutex](https://user-images.githubusercontent.com/71340325/183273747-83c4bc7c-6ba5-4f39-a0db-8a88b225fbe4.jpg)
 
 
@@ -152,6 +149,4 @@ func (b *bank)balance()(balance int){
    *  Swap
 
 ### Differences between atomic and mutex
-![image](https://user-images.githubusercontent.com/71340325/183277759-793be12f-a0f0-490f-9d16-653825aa421a.png)
-> Illustration created for “A Journey With Go”, made from the original Go Gopher, created by Renee French.
 * same in **behavior** but different in **performance**
