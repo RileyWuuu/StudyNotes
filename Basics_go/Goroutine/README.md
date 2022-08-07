@@ -58,7 +58,7 @@ func (b *bank) deposit(amount int){
 ![image](https://user-images.githubusercontent.com/71340325/183039270-224caeb0-120a-4c08-b4ab-375fa03bdba4.png)
 > Illustration created for “A Journey With Go”, made from the original Go Gopher, created by Renee French.
 
-![內部](https://user-images.githubusercontent.com/71340325/183249603-a90be6c7-041d-49fb-b8e5-f003c853859e.jpg)
+![mutex](https://user-images.githubusercontent.com/71340325/183273747-83c4bc7c-6ba5-4f39-a0db-8a88b225fbe4.jpg)
 
 
 * A method used as a lock to ensure that only one Goroutine is accessing the critical section of code at any point of time.
