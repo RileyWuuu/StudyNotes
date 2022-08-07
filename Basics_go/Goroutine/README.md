@@ -139,3 +139,14 @@ func (b *bank)balance()(balance int){
 }
 ```
 > In the code above, we use sync.RWMutex, meaning a lock that allows multiple readers but only one writer, so that reading and writing will be processed simultaneously.
+
+
+## sync/atomic
+* when we need to implement synchronization algorithms, we can use mutex or package atomic
+* atomic works through CPU command
+* Commands:
+   *  Add
+   *  CompareAndSwap
+   *  Load
+   *  Store
+   *  Swap
