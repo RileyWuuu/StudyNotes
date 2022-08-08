@@ -165,5 +165,5 @@ func (b *bank)balance()(balance int){
 * Goroutines are a way of doing tasks concurrently in go. They are lightweight abstractions over threads. Their creation and destruction are very cheap compared to threads.
 
 2. What is the difference between concurrency and parallelism?
-* Concurrency is dealing with multiple things at once( doesn't need to be done at the same time). Parallelism is doing the things at once ar same time.
+* Concurrency is dealing with multiple things at once( doesn't need to be done at the same time). Parallelism is doing the things at once at the same time.
 
