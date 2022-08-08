@@ -157,3 +157,13 @@ func (b *bank)balance()(balance int){
 * Occurs when multiple threads try to access and modify the same data (memory address)
    * E.g. As the image shown below, if one threads trys to increase and int and another thread tries to do the same thing, it will cause race condition.
    ![raceCondition](https://user-images.githubusercontent.com/71340325/183282417-e80d041b-2182-4d93-8ab9-35f91e593439.jpg)
+
+
+# Goroutine Interview Questions
+
+1. What are gouroutines and how are they different from threads?
+* Goroutines are a way of doing tasks concurrently in go. They are lightweight abstractions over threads. Their creation and destruction are very cheap compared to threads.
+
+2. What is the difference between concurrency and parallelism?
+* Concurrency is dealing with multiple things at once( doesn't need to be done at the same time). Parallelism is doing the things at once ar same time.
+
