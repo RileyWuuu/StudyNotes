@@ -1,12 +1,21 @@
 # Gouroutine Study Note
+## Table of Content
+* ### [1. Channel](#Channel)
+* ### [2. Goroutine](#Goroutine)
+* ### [3. WaitGroup](#WaitGroup)
+* ### [4. Mutex](#Mutex)
+* ### [5. sync/atomic](#syncatomic)
+* ### [6. RaceConditions](#RaceConditions)
+* ### [7. RelatedInterviewQuestions](#RelatedInterviewQuestions)
 
-## Channel 
+## <a name="Channel"> Channel </a> 
+
 ![Channel](https://user-images.githubusercontent.com/71340325/183274342-f7c82641-6e28-4927-9142-36f6c55fe2ac.jpg)
 
 *  a means through which different goroutines communicate.
 
 
-## Goroutine
+## <a name="Goroutine"> Goroutine </a>
 * Goroutines are actions or methods that run concurrently with other functions or methods.
 * We use channel for goroutines' communication in order to synchronize execution and pass values.
 * Concurrency :
@@ -47,7 +56,7 @@ func (b *bank) deposit(amount int){
 }
 ```
  
-## WaitGroup
+## <a name="WaitGroup"> WaitGroup </a>
 * Needs to be done through pointer (so that it all points directly to the same struct, avoids call by value situation)
 * waits for a collection of goroutines to finish.
 * main goroutine calls Add to set the number of goroutines to wait for. Then each of the goroutines runs and calls Done when finished.
@@ -57,7 +66,7 @@ func (b *bank) deposit(amount int){
 
 * WaitGroup is mainly used to wait for a group of goroutines to exit. We can specify the number of goroutines we need to wait for to exit by adding, and then decrease by Done. If it is 0, we can exit
 
-## Mutex
+## <a name="Mutex"> Mutex </a>
 ![mutex](https://user-images.githubusercontent.com/71340325/183273747-83c4bc7c-6ba5-4f39-a0db-8a88b225fbe4.jpg)
 
 
@@ -138,7 +147,7 @@ func (b *bank)balance()(balance int){
 > In the code above, we use sync.RWMutex, meaning a lock that allows multiple readers but only one writer, so that reading and writing will be processed simultaneously.
 
 
-## sync/atomic
+## <a name="syncatomic"> sync/atomic </a>
 * when we need to implement synchronization algorithms, we can use mutex or package atomic
 * atomic works through CPU command
 * Commands:
@@ -153,13 +162,13 @@ func (b *bank)balance()(balance int){
 ![mutexVSatomic](https://user-images.githubusercontent.com/71340325/183278863-4cab83e9-504c-4856-a799-5616b4ad6aa7.jpg)
 
 
-## RaceConditions
+## <a name="RaceConditions"> RaceConditions </a>
 * Occurs when multiple threads try to access and modify the same data (memory address)
    * E.g. As the image shown below, if one threads trys to increase and int and another thread tries to do the same thing, it will cause race condition.
    ![raceCondition](https://user-images.githubusercontent.com/71340325/183282417-e80d041b-2182-4d93-8ab9-35f91e593439.jpg)
 
 
-# Goroutine Interview Questions
+# <a name="RelatedInterviewQuestions"> Goroutine Interview Questions </a>
 
 1. What are gouroutines and how are they different from threads?
 * Goroutines are a way of doing tasks concurrently in go. They are lightweight abstractions over threads. Their creation and destruction are very cheap compared to threads.
