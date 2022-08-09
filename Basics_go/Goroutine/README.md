@@ -73,7 +73,7 @@ func (b *bank) deposit(amount int){
 <hr>
 
    ### <a name="Context"> Context </a>
-![context](https://user-images.githubusercontent.com/71340325/183562976-dc1e83da-dfce-419b-b111-d9bac73d5122.jpg)
+![context](https://user-images.githubusercontent.com/71340325/183563459-0803fe02-cc17-48fe-b459-0bc20368e08e.jpg)
   
    * Carries deadlines, cancellation signals, and other request-scoped values across API boundaries to all the goroutines involved in handling a request.
    * When a Context is canceled, all Contexts derived from it are also canceled.
