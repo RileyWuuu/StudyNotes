@@ -33,6 +33,7 @@ Explanation: 4 is less than twice the value of 3, so we return -1.
 ### run through the array to get the index and value of maximum slice, compare with each value and return the index.
 
 ```
+(Run time: 0ms)
 func dominantIndex(nums[]int)int{
     max,idx:=0,0
     for i,x:=range nums{
