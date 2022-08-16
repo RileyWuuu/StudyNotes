@@ -32,6 +32,10 @@ func TestPlusOne(t *testing.T) {
 			input{[]int{9}},
 			output{[]int{1, 0}},
 		},
+		{
+			input{[]int{1,2,7,9}},
+			output{[]int{1,2,8,0}},
+		},
 	}
 	for _, x := range data {
 		ast.Equal(x.o.out, plusOne(x.i.in))
