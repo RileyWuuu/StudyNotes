@@ -42,7 +42,7 @@ func dominantIndex(nums[]int)int{
         }
     }
     for _,x:=range nums{
-        if x!=max && x*2>=max{
+        if x!=max && x*2>max{
             return -1
         }
     }
