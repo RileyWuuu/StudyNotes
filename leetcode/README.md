@@ -15,6 +15,7 @@
 |    35 | [Search Insert Position](./00035/README.md) | Easy | `Array` `Binary Search` |
 |    66 | [Plus One](./00066/README.md) | Easy | `Array` `Math` |
 |    67 | [Add Binary](./00067/README.md) | Easy | `Math` `String` `Bit Manipulation` `Simulation`  |
+|    70 | [Climbing Stairs](./00070/README.md) | Easy | `Math` `Dynamic Programming` `Memoization`  |
 |    88 | [Merge Sorted Array](./00088/README.md) | Easy | `Array` `Two Pointers` `Sorting` |
 |   118 | [Pascal's Triangle](./00118/README.md) | Easy | `Array` `Dynamic Programming` |
 |   283 | [Move Zeroes](./00283/README.md) | Easy | `Array` `Two Pointers`|
@@ -23,7 +24,7 @@
 |   414 | [Third Maximum Number](./00414/README.md) | Easy | `Array` `Sorting` |
 |   448 | [Find All Numbers Disappeared in an Array](./00448/README.md) | Easy | `Array` `Hash Table` |
 |   485 | [Max Consecutive Ones](./00485/README.md) | Easy | `Array` |
-|   509 | [Fibonacci Number](./00509/README.md) | Easy | `Math` `Dynamic Programming` `Recursion` `Memorization`  |
+|   509 | [Fibonacci Number](./00509/README.md) | Easy | `Math` `Dynamic Programming` `Recursion` `Memoization`  |
 |   724 | [Find Pivot Index](./00724/README.md) | Easy | `Array` `Prefix Sum` |
 |   747 | [Largest Number At Least Twice of Others](./00747/README.md) | Easy | `Array` `Sorting`|
 |   905 | [Sort Array By Parity](./00905/README.md) | Easy | `Array` `Two Pointers` `Sorting` |
