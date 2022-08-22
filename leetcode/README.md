@@ -1,0 +1,5 @@
+![image](https://badges.peiyuan.ch/StudyNotes/leetcode/RileyWuuu/ranking?logo=leetcode&color=blue)
+![image](https://badges.peiyuan.ch/leetcode/jianliu0616/solved?difficulty=all&logo=leetcode&color=orange)
+![image](https://img.shields.io/badge/Easy-31-green)
+![image](https://img.shields.io/badge/Medium-0-yellow)
+![image](https://img.shields.io/badge/Hard-0-red)
