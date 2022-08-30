@@ -23,7 +23,7 @@ message Person{
     int32 id = 3;
 }...etc
 ```
-* The "=1" marker identify the unique "tag" that field uses in the binary encoding.
+* The "=1" marker identifies the unique "tag" that field uses in the binary encoding.
 4. Install Go protocol buffers plugin. The plugin must be in your $PATH for the compiler protoc to find it.
 5. Run the compiler. Mack sure to specify the source directory(where your applications's source code lives, if not provided, the current directory will be used.),the destination directory, and the path to your .proto.
 ```
