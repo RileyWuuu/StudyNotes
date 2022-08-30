@@ -11,8 +11,8 @@
 2. .proto file starts with a package definition. (Prevents naming conflicts between different projects)
 ```
 syntax = "proto3";
-package test;
-import "google/protobuf/timestamp.proto";
+option go_package = "myProject/packageTest";
+package packageTest;
 
 ```
 3. Start your message definitions.
@@ -31,4 +31,37 @@ protoc -I=$SRC_DIR --go_out=$DST_DIR $SRC_DIR/test.proto
 ```
 ```
 protoc SRCDIR --go_out=DESDIR
+```
+* Compile all proto files at once
+```
+./build/compile_by_protobuf.sh
+```
+
+
+<hr>
+
+## Encoding / Serialize message
+
+### Encoding
+* We serialize messages to bytes Slice.
+```
+pbObj := PersonPB.PersonResponse{
+    Error: ............
+}
+ByteSlice,err := proto.Marshal(pbObj)
+```
+* After serializing it, we can send this bytes and parse somewhere else.
+
+### Decoding
+1. Getting data from body and decode
+```
+binary,err := ioutil.ReadAll(r.Body) //get http request data
+pbObj := PersonPB.PersonRequest{}
+protojson.Unmarshal(binary,&pbObj)
+```
+2. DiscardUnknown
+```
+binary,err := ioutil.ReadAll(r.Body)
+option := protojson.UnmarshalOptions(DiscardUnknown:true)
+option.Unmarshal(binary,&pbObj)
 ```
