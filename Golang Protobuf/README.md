@@ -3,7 +3,7 @@
 
 *  Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data.
 *  We define how we want our data to be structured once, and use special generated source code to write and read structured data to and from data streams.
-* Currently supports Java, Python, C++, Kotlin, Dart, Go, Ruby, and C#.
+* Currently supports Java, Python, C++ (v2), Kotlin, Dart, Go, Ruby, and C# (v3).
 * Creates a class that implements automatic encoding and parsing of the protocol buffer data with binary format.
 
 ## Instructions:
@@ -65,3 +65,6 @@ binary,err := ioutil.ReadAll(r.Body)
 option := protojson.UnmarshalOptions(DiscardUnknown:true)
 option.Unmarshal(binary,&pbObj)
 ```
+<hr>
+
+## curl protobuf type url
