@@ -20,3 +20,6 @@
 
 
 <hr>
+
+
+![time complexity](https://user-images.githubusercontent.com/71340325/189002274-11fd39bd-a9f8-42e2-9420-70de4ce7849e.PNG)

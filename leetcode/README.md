@@ -1,7 +1,7 @@
 ![image](https://badges.peiyuan.ch//leetcode/RileyWu82902/ranking?logo=leetcode&color=blue)
 ![image](https://badges.peiyuan.ch/leetcode/RileyWu82902/solved?difficulty=all&logo=leetcode&color=orange)
 ![image](https://img.shields.io/badge/Easy-31-green)
-![image](https://img.shields.io/badge/Medium-0-yellow)
+![image](https://img.shields.io/badge/Medium-4-yellow)
 ![image](https://img.shields.io/badge/Hard-0-red)
 
 
@@ -29,6 +29,7 @@
 |   747 | [Largest Number At Least Twice of Others](./0747/README.md) | Easy | `Array` `Sorting`|
 |   905 | [Sort Array By Parity](./0905/README.md) | Easy | `Array` `Two Pointers` `Sorting` |
 |   941 | [Valid Mountain Array](./0941/README.md) | Easy | `Array` |
+|   948 | [Bag of Tokens](./0948/README.md) | Medium | `Array` `Two Pointers` `Greedy` `Sorting`|
 |   977 | [Squares of a Sorted Array](./0977/README.md) | Easy | `Array` `Two Pointers` `Sorting`|
 |  1051 | [Height Checker](./1051/README.md) | Easy | `Array` `Sorting` `Couting Sort`|
 |  1089 | [Duplicate Zeros](./1089/README.md) | Easy | `Array` `Two Pointers` |
