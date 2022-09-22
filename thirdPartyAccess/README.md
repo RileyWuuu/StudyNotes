@@ -10,3 +10,4 @@
 - Authorization Server : receives requests from Client for Access Tokens and issues them upon successful authentication and consent by the Resource Owner.
 - Resource Server : server that protects the user’s resources and receives access requests from the Client.
 
+![$60 00 $65 00 $80 00](https://user-images.githubusercontent.com/71340325/191670853-27ebca76-4d8a-468f-81b1-83a35781b54c.jpg)
