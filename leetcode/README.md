@@ -11,7 +11,7 @@
 |    9 | [Palindrome Number](./0009/README.md) | Easy | `Math`  |
 |    26 | [Remove Duplicates from Sorted Array](./0026/README.md) | Easy | `Array` `Two Pointers` |
 |    27 | [Remove Element](./0027/README.md) | Easy |  `Array` `Two Pointers`  |
-|    28 | [Implement strStr()](./0028/README.md) | Easy | `Two Pointers` `String` `String Matching` |
+|    28 | [Find the Index of the First Occurrence in a String](./0028/README.md) | Medium | `Two Pointers` `String` `String Matching` |
 |    35 | [Search Insert Position](./0035/README.md) | Easy | `Array` `Binary Search` |
 |    66 | [Plus One](./0066/README.md) | Easy | `Array` `Math` |
 |    67 | [Add Binary](./0067/README.md) | Easy | `Math` `String` `Bit Manipulation` `Simulation`  |
