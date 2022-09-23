@@ -17,7 +17,7 @@ type result struct {
 	o output
 }
 
-func Test_concatenatedBinary(t *testing.T) {
+func TestconcatenatedBinary(t *testing.T) {
 	ast := assert.New(t)
 	data := []result{
 		{
