@@ -1,7 +1,7 @@
 ![image](https://badges.peiyuan.ch//leetcode/RileyWu82902/ranking?logo=leetcode&color=blue)
 ![image](https://badges.peiyuan.ch/leetcode/RileyWu82902/solved?difficulty=all&logo=leetcode&color=orange)
 ![image](https://img.shields.io/badge/Easy-31-green)
-![image](https://img.shields.io/badge/Medium-4-yellow)
+![image](https://img.shields.io/badge/Medium-5-yellow)
 ![image](https://img.shields.io/badge/Hard-0-red)
 
 
@@ -11,7 +11,7 @@
 |    9 | [Palindrome Number](./0009/README.md) | Easy | `Math`  |
 |    26 | [Remove Duplicates from Sorted Array](./0026/README.md) | Easy | `Array` `Two Pointers` |
 |    27 | [Remove Element](./0027/README.md) | Easy |  `Array` `Two Pointers`  |
-|    28 | [Implement strStr()](./0028/README.md) | Easy | `Two Pointers` `String` `String Matching` |
+|    28 | [Find the Index of the First Occurrence in a String](./0028/README.md) | Medium | `Two Pointers` `String` `String Matching` |
 |    35 | [Search Insert Position](./0035/README.md) | Easy | `Array` `Binary Search` |
 |    66 | [Plus One](./0066/README.md) | Easy | `Array` `Math` |
 |    67 | [Add Binary](./0067/README.md) | Easy | `Math` `String` `Bit Manipulation` `Simulation`  |
@@ -39,5 +39,6 @@
 |  1346 | [Check If N and Its Double Exist](./1346/README.md) | Easy | `Array` `Hash Table` `Two Pointers` `Binary Search` `Sorting`|
 |  1480 | [Running Sum of 1d Array](./1480/README.md) | Easy | `Array` `Prefix Sum` |
 |  1672 | [Richest Customer Wealth](./1672/README.md) | Easy | `Array` `Matrix` |
+|  1680 | [Concatenation of Consecutive Binary Numbers](./1680/README.md) | Medium | `Math` `Bit Manipulation` `Simulation` |
 |  2283 | [Check if Number Has Equal Digit Count and Digit Value](./2283/README.md) | Easy | `Hash Table` `String` `Counting` |
 
