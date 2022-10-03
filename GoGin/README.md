@@ -40,3 +40,7 @@
 ## Recap
 ### Websocket flow chart
 ![0](https://user-images.githubusercontent.com/71340325/182541888-9fb9ef0b-a66c-4ba3-ae87-7fcaf29ddb8f.jpg)
+
+- Opens a two-way interactive communication session between the user's browser and a server.
+- Sends messages to a server and receive event-driven responses without having to poll the server for a reply.
+- 
