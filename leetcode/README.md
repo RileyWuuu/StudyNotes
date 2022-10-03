@@ -40,5 +40,6 @@
 |  1480 | [Running Sum of 1d Array](./1480/README.md) | Easy | `Array` `Prefix Sum` |
 |  1672 | [Richest Customer Wealth](./1672/README.md) | Easy | `Array` `Matrix` |
 |  1680 | [Concatenation of Consecutive Binary Numbers](./1680/README.md) | Medium | `Math` `Bit Manipulation` `Simulation` |
-|  2283 | [Check if Number Has Equal Digit Count and Digit Value](./2283/README.md) | Easy | `Hash Table` `String` `Counting` |
+|  2283 | [Check if Number Has Equal Digit Count and Digit Value](./2283/README.md) | Easy | `countPrimes` |
+|  2427 | [Number of Common Factors](./2427/README.md) | Easy | |
 
