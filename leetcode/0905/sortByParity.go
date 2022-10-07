@@ -1,15 +1,7 @@
-package main
-
-import "fmt"
-
-func main() {
-	var arr []int
-	arr = append(arr, 3, 1, 2, 4)
-	fmt.Println(sortArrayByParity(arr))
-}
+package p0905
 
 //TimeComplexity:O(n)
-func sortArrayByParity(nums []int) []int {
+func SortArrayByParity(nums []int) []int {
 	x := 0
 	for i := 0; i < len(nums); i++ {
 		if nums[i]%2 == 0 {
