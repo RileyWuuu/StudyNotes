@@ -1,4 +1,4 @@
-package main
+package p0128
 
 import (
 	"testing"
@@ -17,19 +17,19 @@ type result struct {
 	o output
 }
 
-func TestMaxProfit(t *testing.T) {
+func TestMajorityElement(t *testing.T) {
 	ast := assert.New(t)
 	data := []result{
 		{
-			input{[]int{7, 1, 5, 3, 6, 4}},
-			output{5},
+			input{[]int{3, 2, 3}},
+			output{3},
 		},
 		{
-			input{[]int{7, 6, 4, 3, 1}},
-			output{0},
+			input{[]int{2, 2, 1, 1, 1, 2, 2}},
+			output{2},
 		},
 	}
 	for _, x := range data {
-		ast.Equal(x.o.out, maxProfit(x.i.in))
+		ast.Equal(x.o.out, majorityElement(x.i.in))
 	}
 }

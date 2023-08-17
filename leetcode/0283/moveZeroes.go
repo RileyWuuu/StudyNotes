@@ -16,3 +16,16 @@ func moveZeroes(nums []int) {
 		}
 	}
 }
+
+func moveZeroesII(nums []int) {
+	idx := 0
+	for _, x := range nums {
+		if x != 0 {
+			nums[idx] = x
+			idx++
+		}
+	}
+	for i := idx; i < len(nums); i++ {
+		nums[i] = 0
+	}
+}
