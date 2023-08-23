@@ -9,6 +9,7 @@
 | ---: | :---- |:---------- | :------------- |
 |    1 | [Two Sum](./0001/README.md) | Easy | `Array`  |
 |    9 | [Palindrome Number](./0009/README.md) | Easy | `Math`  |
+|    15 | [3Sum](./0015/README.md) | Medium | `Array` `Two Pointers` `Sorting` |
 |    26 | [Remove Duplicates from Sorted Array](./0026/README.md) | Easy | `Array` `Two Pointers` |
 |    27 | [Remove Element](./0027/README.md) | Easy |  `Array` `Two Pointers`  |
 |    28 | [Find the Index of the First Occurrence in a String](./0028/README.md) | Medium | `Two Pointers` `String` `String Matching` |
@@ -19,6 +20,7 @@
 |    88 | [Merge Sorted Array](./0088/README.md) | Easy | `Array` `Two Pointers` `Sorting` |
 |   118 | [Pascal's Triangle](./0118/README.md) | Easy | `Array` `Dynamic Programming` |
 |  121 | [Best Time to Buy and Sell Stock](./0121/README.md) | Easy | `Array` `Dynamic Programming` |
+|  238 | [Product of Array Except Self](./0238/README.md) | Medium | `Array` `Prefix Sum` |
 |   283 | [Move Zeroes](./0283/README.md) | Easy | `Array` `Two Pointers`|
 |   383 | [Ransom Note](./0383/README.md) | Easy | `Hash Table` `String` `Counting` |
 |   412 | [Fizz Buzz](./0412/README.md) | Easy | `Math` `String` `Simulation`  |
