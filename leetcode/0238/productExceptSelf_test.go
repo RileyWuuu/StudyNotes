@@ -31,6 +31,6 @@ func TestProductExceptSelf(t *testing.T) {
 		},
 	}
 	for _, n := range data {
-		ast.Equal(n.o.out, productExceptSelf(n.i.in))
+		ast.Equal(n.o.out, ProductExceptSelf(n.i.in))
 	}
 }
