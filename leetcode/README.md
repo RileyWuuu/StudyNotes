@@ -21,6 +21,8 @@
 |   118 | [Pascal's Triangle](./0118/README.md) | Easy | `Array` `Dynamic Programming` |
 |   112 | [Path Sum](./0112/README.md) | Easy | `Tree` `Depth-First Search` `Breadth-First Search` `Binary Tree` |
 |  121 | [Best Time to Buy and Sell Stock](./0121/README.md) | Easy | `Array` `Dynamic Programming` |
+|   169 | [Majority Element](./0169/README.md) | Easy | `Array` `Hash Table` `Divide and Conquer` `Sorting` `Counting` |
+|   217 | [Contains Duplicate](./0217/README.md) | Easy | `Array` `Hash Table` `Sorting` |
 |  238 | [Product of Array Except Self](./0238/README.md) | Medium | `Array` `Prefix Sum` |
 |   283 | [Move Zeroes](./0283/README.md) | Easy | `Array` `Two Pointers`|
 |   383 | [Ransom Note](./0383/README.md) | Easy | `Hash Table` `String` `Counting` |
