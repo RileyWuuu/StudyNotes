@@ -1,7 +1,5 @@
 package main
 
-import "math"
-
 //TimeComplexity:nlogn
 // func sortedSquare(nums []int) []int {
 // 	for i := 0; i < len(nums); i++ {
@@ -16,19 +14,21 @@ import "math"
 // math.abs(float(x))=負數轉正
 
 func sortedSquareII(nums []int) []int {
-	head := 0
-	tail := len(nums) - 1
+	for i := range nums {
+		nums[i] *= nums[i]
+	}
+	idx := len(nums) - 1
+	head, tail := 0, idx
 	result := make([]int, len(nums))
-	current := len(nums) - 1
-	for current >= 0 {
-		if math.Abs(float(nums[head])) >= math.Abs(float(nums[tail])) {
-			result[current] = int(math.Pow(float(nums[head]), 2))
+	for idx >= 0 {
+		if nums[head] > nums[tail] {
+			result[idx] = head
 			head++
 		} else {
-			result[current] = int(math.Pow(float(nums[tail]), 2))
+			result[idx] = tail
 			tail--
 		}
-		current--
+		idx--
 	}
 	return result
 }
