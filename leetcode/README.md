@@ -19,6 +19,7 @@
 |    70 | [Climbing Stairs](./0070/README.md) | Easy | `Math` `Dynamic Programming` `Memoization`  |
 |    88 | [Merge Sorted Array](./0088/README.md) | Easy | `Array` `Two Pointers` `Sorting` |
 |   118 | [Pascal's Triangle](./0118/README.md) | Easy | `Array` `Dynamic Programming` |
+|   112 | [Path Sum](./0112/README.md) | Easy | `Tree` `Depth-First Search` `Breadth-First Search` `Binary Tree` |
 |  121 | [Best Time to Buy and Sell Stock](./0121/README.md) | Easy | `Array` `Dynamic Programming` |
 |  238 | [Product of Array Except Self](./0238/README.md) | Medium | `Array` `Prefix Sum` |
 |   283 | [Move Zeroes](./0283/README.md) | Easy | `Array` `Two Pointers`|
